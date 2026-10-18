@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700|Open+Sans:400,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+
+body {
+    background: #927057;
+    color: #ffffff;  
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+div.image-container {
+    width: 123px; 
+    margin: 30px auto 0 auto;
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+}
+
+.image-container img.avatar {
+    border: 5px solid #d5c395;
+    height: 123px;
+    width: 123px;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid #d5c395;
+    z-index: 3;
+}
+
+
+main {
+    width: 470px;
+    margin: 0 auto;
+    padding: 50px 60px 50px 60px;
+    background: #d5c395;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+h2 {
+    color: #ffffff;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    outline: none;
+    border: none;
+    background: #efe1c4;
+    padding: 12px 10px 12px 50px;
+    width: 100%;
+    font-size: 1em;
+    color: #927057;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+.input-group .icon {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    color: #927057;
+    font-size: 1.1em;
+    z-index: 1;
+}
+
+
+.btn-submit {
+    outline: none;
+    border: none;
+    background: #927057;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.2em;
+    color: #d5c395;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submit:hover {
+    background: #7a5c46;
+}
+
+
+footer {
+    font-size: 0.9em;
+    color: #EFE1C4;
+    text-align: center;
+    margin-top: 30px;
+}
